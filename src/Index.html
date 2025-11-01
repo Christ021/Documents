@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compilation</title>
+  <style>
+    body {
+      background-color: black;
+      background-image: url('https://wallpaperaccess.com/full/2122578.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100px;
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* HEADER BAR */
+    .header {
+      display: flex;
+      justify-content: space-between; /* title left, buttons right */
+      align-items: center;
+      background-color: #1c0146;
+      padding: 15px 30px;
+    }
+
+    .Upper {
+      font-size: 28px;
+      background-color: green;
+      padding: 8px 15px;
+      color: antiquewhite;
+    }
+
+    /* NAVIGATION BUTTONS */
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons a button {
+      font-size: 18px;
+      background-color: white;
+      cursor: pointer;
+      padding: 6px 12px;
+    }
+
+    .nav-buttons a button:hover {
+      background-color: lightgray;
+      color: black;
+      transition: 0.2s;
+    }
+
+    /* LINE SEPARATOR */
+    hr {
+      border: 1px solid white;
+      margin: 0;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+      padding: 40px;
+      color: rgb(236, 233, 233);
+      position: relative;
+      min-height: 200px; /* Ensure space for absolute positioning */
+      margin-right: 250px; /* Make space for the sidebar */
+    }
+
+    /* H1 STYLING */
+    .content h1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* MAIN CONTAINER */
+    .main-container {
+      flex: 1;
+      position: relative;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background-color: rgba(28, 1, 70, 0.8);
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .sidebar h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: antiquewhite;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .sidebar ul li a:hover {
+      color: lightgray;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+   <hr>
+
+  <div class="header">
+    <div class="Upper">My Personal Website</div>
+    <div class="Upper"> Home </div>
+
+    <div class="nav-buttons">
+      <a href="Family.html"><button>Family</button></a>
+      <a href="Aboutmyself.html"><button>About me</button></a>
+      <a href="Personal_Information.html"><button>Personal Information</button></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- MAIN CONTAINER -->
+  <div class="main-container">
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <h1>Christian John O. Bayais</h1>
+      <p></p>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2>My Works</h2>
+      <ul>
+        <li><a href="Exer1.html">Exercise 1</a></li>
+        <li><a href="Exer2.html">Exercise 2</a></li>
+        <li><a href="Exer3.html">Exercise 3</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
